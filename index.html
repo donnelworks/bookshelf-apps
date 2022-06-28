@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf Apps</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+
+    <!-- Home & Input Section -->
+    <section>
+      <div class="row">
+        <div class="col col-title">
+          <h1 class="title">Bookshelf Apps</h1>
+          <hr>
+        </div>
+        <div class="col">
+          <div class="card card-shadow form-buku">
+            <div class="row">
+              <dov class="col">
+                <h2 class="card-title">Masukan Buku Baru</h2>
+                <form>
+                  <div class="form-input">
+                    <label for="judul">Judul</label>
+                    <input type="text" id="judul" required>
+                  </div>
+                  <div class="form-input">
+                    <label for="penulis">Penulis</label>
+                    <input type="text" id="penulis" required>
+                  </div>
+                  <div class="form-input">
+                    <label for="tahun">Tahun</label>
+                    <input type="number" id="tahun" required>
+                  </div>
+                  <div class="form-input">
+                    <div class="custom-checkbox">
+                      <label for="status">Selesai dibaca</label>
+                      <input type="checkbox" id="status">
+                    </div>
+                  </div>
+                </form>
+              </dov>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button id="btnSimpan">Masukan buku ke rak</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /. -->
+
+    <!-- Search & Rak Section -->
+    <section>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <!-- Search -->
+            <div class="row">
+              <div class="col col-search">
+                <div class="search">
+                  <!-- <h2 class="card-title">Cari Buku</h2> -->
+                  <input type="text" class="input-search" id="cari" placeholder="Cari judul buku">
+                  <button id="btnCari">Cari</button>
+                </div>
+              </div>
+            </div>
+            <!-- /. -->
+
+            <!-- Rak -->
+            <div class="row">
+              <div class="col col-rak">
+                <h2 class="card-title">Belum selesai dibaca</h2>
+                <div id="belumSelesai">
+
+                  <div class="row">
+                    <div class="col">
+                      <div class="card card-border card-shadow book-list">
+                        <h3 class="book-title" id="judulBuku">Harry Potter II</h3>
+                        <p>Penulis: J.K. Rowling</p>
+                        <p>Tahun: 2012</p>
+                        <button class="status">Selesai dibaca</button>
+                        <button class="delete-book">Hapus</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="card card-border card-shadow book-list">
+                        <h3 id="judulBuku">Harry Potter II</h3>
+                        <p>Penulis: J.K. Rowling</p>
+                        <p>Tahun: 2012</p>
+                        <button class="status">Selesai dibaca</button>
+                        <button class="delete-book">Hapus</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col col-rak">
+                <h2 class="card-title">Selesai dibaca</h2>
+                <div id="belumSelesai">
+
+                  <div class="row">
+                    <div class="col">
+                      <div class="card card-border card-shadow book-list">
+                        <h3 class="book-title" id="judulBuku">Harry Potter I</h3>
+                        <p>Penulis: J.K. Rowling</p>
+                        <p>Tahun: 2010</p>
+                        <button class="status">Belum selesai dibaca</button>
+                        <button class="delete-book">Hapus</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- /. -->
+          </div>
+        </div>
+      </div>  
+    </section>
+    <!-- /. -->
+  </main>
+</body>
+</html>

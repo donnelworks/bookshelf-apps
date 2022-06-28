@@ -1,0 +1,216 @@
+:root {
+    --primary: #227C7A;
+    --soft-primary: #F0F7F7;
+    --secondary: #FE6033;
+    --soft-secondary: #ffdcd3;
+    --gray: #6C7085;
+    --soft-gray: #dee1f1;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+}
+
+input, button {
+    outline: none !important;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--primary);
+    border: 0;
+    font-weight: 700;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+main {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+hr {
+    border: 5px solid var(--primary);
+    width: 50px;
+    margin: 10px 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.card-border {
+    border: solid 2px var(--soft-gray);
+}
+
+.card-shadow {
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+}
+
+.card-title {
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.col-title {
+    justify-content: center;
+    padding: 25px;
+}
+
+.title {
+    font-size: 50px;
+    color: var(--gray);
+}
+
+.form-buku {
+    margin: 25px 50px;
+}
+
+.form-input {
+    margin: 10px 0;
+}
+
+.form-input > label  {
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.form-input > input {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--soft-gray);
+}
+
+.form-input > input:focus  {
+    border: 2px solid var(--primary);
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.custom-checkbox > label  {
+    color: var(--primary);
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.col-search {
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.search {
+    width: 60%;
+}
+
+.input-search {
+    display: inline;
+    width: 70%;
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px solid var(--soft-gray);
+    background-color: var(--soft-gray);
+}
+
+#btnCari {
+    display: inline;
+    padding: 10px;
+    width: 20%;
+    border-radius: 25px;
+    color: white;
+    background-color: var(--primary);
+    border: 0;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.col-rak {
+    padding: 10px 25px;
+}
+
+.book-list {
+    margin: 10px 0;
+}
+
+.book-list > h3 {
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.book-list > p {
+    color: var(--gray);
+    margin-bottom: 5px;
+}
+
+.status {
+    display: inline;
+    padding: 10px;
+    width: auto;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--primary);
+    border: 0;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.delete-book {
+    display: inline;
+    padding: 10px;
+    width: auto;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--secondary);
+    border: 0;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
