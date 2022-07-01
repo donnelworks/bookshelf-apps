@@ -77,7 +77,11 @@ hr {
     border: solid 2px var(--soft-gray);
 }
 
-.card-shadow {
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+.shadow-lg {
     box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
 }
 
@@ -182,7 +186,7 @@ hr {
     margin-bottom: 5px;
 }
 
-.status {
+.status, .delete-book, .edit-book {
     display: inline;
     padding: 10px;
     width: auto;
@@ -194,16 +198,8 @@ hr {
     margin: 10px 0;
 }
 
-.delete-book {
-    display: inline;
-    padding: 10px;
-    width: auto;
-    border-radius: 10px;
-    color: white;
+.delete-book, .edit-book {
     background-color: var(--secondary);
-    border: 0;
-    font-weight: 700;
-    margin: 10px 0;
 }
 
 
