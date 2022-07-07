@@ -67,14 +67,26 @@ hr {
     flex: 1;
 }
 
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.bg-secondary {
+    background-color: var(--secondary);
+}
+
 .card {
     background-color: white;
     border-radius: 10px;
     padding: 16px;
 }
 
-.card-border {
+.border {
     border: solid 1px var(--soft-gray);
+}
+
+.border-dashed {
+    border: dashed 2px var(--soft-gray);
 }
 
 .shadow {
@@ -98,6 +110,15 @@ hr {
 .title {
     font-size: 50px;
     color: var(--gray);
+}
+
+#alert {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 5px;
 }
 
 .form-buku {
