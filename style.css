@@ -74,7 +74,7 @@ hr {
 }
 
 .card-border {
-    border: solid 2px var(--soft-gray);
+    border: solid 1px var(--soft-gray);
 }
 
 .shadow {
